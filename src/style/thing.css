@@ -1,0 +1,85 @@
+.thingContainer{
+    /* background-color: purple; */
+    position: relative;
+    top:300px;
+    height:470px;
+    width: 25vw;
+    float: left;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius:10px;
+    padding: 2vw 1.5vw;
+    opacity: 0;
+}
+
+
+.thing:hover{
+    background-color: #323232
+}
+.thing{
+    position: relative;
+    background-color: white;
+    cursor: crosshair;
+    border-radius:10px;
+    transition-duration: .5s;
+    padding-bottom: 30px;
+    padding-top: 45px;
+
+}
+.thingLogo{
+    position: relative;
+    height: 70px;
+    width: 100px;
+    left:-50px;
+    margin-left: 11vw;
+    margin-bottom: 20px;
+    top: 22px;
+    font-size: 15px;
+}
+.thingTitle{
+    padding-top:15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    font-weight:500 !important;
+    
+}
+.thing:hover .thingTitle{
+    color: white;
+}
+
+.thingAbout{
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 27px;
+    font-size: 16px;
+    color: #878787;
+}
+
+@media(max-width:1200px){
+    .thingContainer{
+        width: 50vw;
+    }
+    .thingLogo{
+        margin-left: 23.5vw;
+    }
+}
+
+@media(max-width:1200px) and (min-width:700px){
+    .thingContainer{
+        height: 400px;
+    }
+}
+
+@media(max-width:500px){
+    .thingContainer{
+        width:100vw;
+    }
+    .thingLogo{
+        margin-left: 48.5vw;
+    }
+    .thingContainer{
+        height: 400px;
+    }
+}

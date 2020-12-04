@@ -1,0 +1,16 @@
+.footerContainer{
+    width: 100vw;
+    height: 125px;
+    padding-top: 40px;
+    background-color:#7682cc;
+    text-align:center;
+}
+.footerText{
+    margin-bottom: 1px;
+    color: #f0f0f0;
+    font-weight: 300 !important;
+    letter-spacing: .5px;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

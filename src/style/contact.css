@@ -1,0 +1,266 @@
+.contactContainer{
+    height: 750px;
+    width: 100vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* background-color: yellow; */
+}
+.getInTouchHead{
+    position: relative;
+    top:300px;
+    opacity: 0;
+    width: 100vw;
+    padding: 50px 50px;
+    height: 150px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contactSemiContainer{
+    position: relative;;
+    width:1200px;
+    /* background-color: tomato; */
+    height:500px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    left:-600px;
+    margin-left: 50vw;
+}
+
+.formContainer{
+    position: relative;
+    top:300px;
+    opacity: 0;
+    height: 400px;
+    width: 750px;
+    /* background-color: violet; */
+    margin-right: 0px;
+    float: left;
+
+}
+
+.detailContainer{
+    position: relative;
+    top:300px;
+    opacity: 0;
+    height:400px;
+    width: 450px;
+    padding:50px 5px;
+    /* background-color: thistle; */
+    text-align: center;
+    float: left;
+}
+
+.nameInput{
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 50px;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid #f0f0f0;
+    letter-spacing: .6px;
+    padding-left: 10px;
+    font-size: 18px;
+    transition-duration: 1s;
+}
+::placeholder{
+    color:#878787;
+}
+.emailInput:focus{
+    border-bottom: 2px solid #878787;
+    outline: none;
+}
+.nameInput:focus{
+    border-bottom: 2px solid #878787;
+    outline: none;
+}
+.messageInput:focus{
+    border-bottom: 2px solid #878787;
+    outline: none;
+}
+.emailInput{
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 10px;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid #f0f0f0;
+    letter-spacing: .6px;
+    padding-left: 10px;
+    font-size: 18px;
+    transition-duration: 1s;
+}
+.messageInput{
+    margin-top: 10px;
+    margin-left:50px;
+    height:150px;
+    width: 650px;
+    line-height: 30px;
+    resize: none;
+    border: none;
+    border-bottom: 2px solid #f0f0f0;
+    letter-spacing: .6px;
+    padding-left: 10px;
+    font-size: 18px;
+    transition-duration: 1s;
+}
+
+.sendButton{
+    margin-top: 50px;
+    height: 50px;
+    width: 200px;
+    margin-left: 500px;
+    border-radius: 50px;
+    background-color:#2b2b2b;
+    color: white;
+    border: none;
+    transition-duration:.5s;
+    outline: none;
+    letter-spacing: .8px;
+}
+.sendButton:hover{
+    background-color:#7682cc;
+    transform: translateY(-2px);
+}
+.sendButton:active{
+    transition-duration: 0s;
+    background-color: #6371ca;
+}
+.contactInfo{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.line{
+    margin-bottom: 10px;
+    color: #878787;
+    text-decoration: none;
+}
+.line:hover{
+    text-decoration: none;
+}
+.link{
+    color: #757557;
+    transition-duration: .5s;
+    cursor: pointer;
+    text-decoration:none;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 15px;
+
+}
+a:hover{
+    text-decoration: none;
+}
+.link:hover{
+    color: black;
+    text-decoration:none;
+    transform: translateY(-1px);
+}
+
+.contactIcons{
+    margin-top: 20px;
+    text-align: center;
+    width: 440px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.contactIcon{
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline;
+    font-size:10px;
+    transition-duration:.5s;
+    outline: none;
+}
+
+
+
+@media(max-width:1000px){
+    .contactContainer{
+        height: max-content;
+    }
+    .contactSemiContainer{
+        position: unset;
+        width: 90vw;
+        margin-left: 5vw;
+        height:max-content ;
+    }
+    .formContainer{
+        width: 90vw;
+        height:430px;
+        float: unset;
+    }
+    .detailContainer{
+        width: 90vw;
+        height: max-content;
+        float: unset;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    .nameInput{
+        width: 80vw;
+        margin-left: 5vw;
+    }
+    .emailInput{
+        width: 80vw;
+        margin-left: 5vw;
+        margin-top: 10px;
+    }
+    .messageInput{
+        width: 80vw;
+        margin-left: 5vw;
+        height: 150px;
+        margin-top: 10px;
+    }
+    .sendButton{
+        width: 80vw;
+        margin-left: 5vw;
+        margin-top: 10px;
+    }
+    .contactIcons{
+        width: 80vw;
+    }
+    .contactIcon{
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 8px;
+    }
+}
+
+@media (min-width:1001px) and (max-width:1200px){
+    .contactContainer{
+        height: max-content;
+    }
+    .contactSemiContainer{
+        width: 1000px;
+        left:-500px;
+    }
+    .formContainer{
+        width: 650px;
+    }
+    .detailContainer{
+        width: 350px;
+    }
+    .nameInput{
+        width: 250px;
+    }
+    .emailInput{
+        width: 250px;
+    }
+    .messageInput{
+        width: 550px;
+    }
+    .sendButton{
+        margin-left: 400px;
+    }
+    .contactIcons{
+        width: 340px;
+    }
+}
+
+@media(min-width:750px) and (max-width:1000px){
+    .nameInput,.emailInput{
+        width: 50vw;
+    }
+}

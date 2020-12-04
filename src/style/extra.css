@@ -1,0 +1,158 @@
+.extraContainer{
+    position: relative;
+    top:300px;
+    background-color: pink;
+    height: 440px;
+    width: 350px;
+    border-radius:5px;
+    float: left;
+    color:white;
+    background-color:#7682cc;
+    cursor: crosshair;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    opacity: 0;
+}
+
+.backgroundAbsoluteContainer{
+    position: absolute;
+    /* z-index: 0; */
+    height: 440px;
+    width: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius:5px;
+    transition-duration: .7s;
+}
+.absolute1{
+    background-image: url('../images/basketball.jpg');
+}
+.absolute2{
+    background-image: url('http://knowafest.com/files/uploads/ignus-2018091001.png');
+    background-position: -220px 0px;
+}
+.absolute3{
+    background-image: url('../images/team.jpg');
+    background-position:-20px -1px ;
+}
+.absolute4{
+    background-image: url('../images/song.jpg');
+    background-size: cover;
+    background-position: -200px 0px;
+}
+
+
+
+.extraHead{
+    position: relative;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-right: 10px;
+    font-size: 25px;
+    z-index: 1;
+    font-weight:500 !important;
+}
+.extraAbout{
+    position: relative;
+    width: 280px;
+    margin-left: 40px;
+    top:30px;
+    font-weight: normal;
+    font-size:16px;
+    line-height: 25px;
+    opacity: 0;
+    transition-duration: 1s;
+    letter-spacing: .4px;
+    font-weight: normal;
+
+}
+
+
+@media(max-width:1300px){
+    .extraContainer{
+        height:370px;
+        width:300px;
+    }
+    .extraAbout{
+        margin-left: 30px;
+        width: 250px;
+        top:25px;
+    }
+    .backgroundAbsoluteContainer{
+        height: 370px;
+        width: 300px;
+    }
+    .absolute4{
+        background-position: -150px 0px;
+    }
+}
+
+@media(min-width:500px) and (max-width:750px){
+    .extraContainer{
+        height: 440px;
+        width:350px;
+    }
+    .extraAbout{
+        width: 280px;
+        margin-left: 40px;
+        top:30px;
+    }
+    .backgroundAbsoluteContainer{
+        height: 440px;
+        width: 350px;
+    }
+}
+
+@media(max-width:500px){
+    .extraContainer{
+        margin-left: 0px;
+    }
+    .absolute2{
+        background-position: -180px 0px;
+    }
+    .extraHead{
+        font-size: 20px;
+    }
+    .extraAbout{
+        top:20px;
+        letter-spacing: unset;
+    }
+}
+
+@media (min-width:350px) and (max-width:500px){
+    .extraContainer{
+        width: 350px;
+    }
+    .backgroundAbsoluteContainer{
+        width: 350px;
+    }
+    .absolute2{
+        background-position: -155px;
+    }
+    .absolute3{
+        background-position: 0px -1px;
+    }
+    .extraAbout{
+        width: 280px;
+    }
+}
+
+@media(min-width:750px) and (max-width:1300px){
+    .absolute2{
+        background-position: -180px 0px;
+    }
+    .absolute3{
+        background-position: .4px 0px;
+    }
+    .extraAbout{
+        top:20px;
+        font-size: 14px;
+        letter-spacing: unset;
+    }
+}
+
+@media(max-width:350px){
+    .absolute3{
+        background-position: .4px 0px;
+    }
+}
