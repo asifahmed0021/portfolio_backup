@@ -20,6 +20,8 @@ $(function(){
 let formShowed=false
 let detailShowed=false
 let getInTouchHeadShowed=false
+let semiHeadShowed=false
+
 window.addEventListener('scroll',()=>{
     if(document.querySelector('.formContainer').getBoundingClientRect().top-window.innerHeight<200 && !formShowed){
         $(function(){
@@ -47,8 +49,14 @@ window.addEventListener('scroll',()=>{
                 $('.getInTouchHead').css('transition-delay','.1s')
                 $('.getInTouchHead').css('transition-duration','1.5s')
                 $('.getInTouchHead').css('transform','translateY(-300px)')
+                $('.contactSemiHead').css('transition-delay','.1s')
+                $('.contactSemiHead').css('transition-duration','1.5s')
+                $('.contactSemiHead').css('transform','translateY(-450px)')
+                $('.contactSemiHead').css('opacity','1')
+
             })
         })
+        semiHeadShowed=true
         getInTouchHeadShowed=true
     }
 })
@@ -108,6 +116,7 @@ class Contact extends React.Component{
             <div className='contactContainer'>
                 <div className='getInTouch'>
                     <h1 className='getInTouchHead'>Get in touch</h1>
+                    <p className='contactSemiHead'>I am always open for new ideas and interesting talks.</p>
                 </div>
                 <div className='contactSemiContainer'>
                     <div className='formContainer'>

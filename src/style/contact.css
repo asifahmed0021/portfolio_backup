@@ -10,7 +10,7 @@
     top:300px;
     opacity: 0;
     width: 100vw;
-    padding: 50px 50px;
+    padding: 50px 10px 0px 10px;
     height: 150px;
     text-align: center;
     font-weight: bold;
@@ -263,4 +263,18 @@ a:hover{
     .nameInput,.emailInput{
         width: 50vw;
     }
+}
+
+.getInTouch{
+    text-align: center;
+}
+
+.contactSemiHead{
+    position: relative;
+    top:420px;
+    font-size: 20px;
+    opacity: 0;
+    color: #878787;
+    letter-spacing: .2px;
+    font-weight: 300 !important;
 }
