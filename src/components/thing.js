@@ -1,10 +1,8 @@
 import React from 'react'
 import '../style/thing.css'
 import $ from 'jquery'
-// import {library} from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faWarehouse } from '@fortawesome/free-solid-svg-icons'
-// library.add(fas)
+
 $(function(){
     $('.thing').hover(function(){
         $(this).css('transform','translateY(-5px)')
@@ -17,6 +15,7 @@ let thing2Showed=false
 let thing3Showed=false
 let thing4Showed=false
 let thing5Showed=false
+let thing6Showed=false
 
 window.addEventListener('scroll',()=>{
     if(document.querySelector('.thing1').getBoundingClientRect().top-window.innerHeight<200 && !thing1Showed){
@@ -78,6 +77,19 @@ window.addEventListener('scroll',()=>{
         thing5Showed=true
     }
 })
+window.addEventListener('scroll',()=>{
+    if(document.querySelector('.thing6').getBoundingClientRect().top-window.innerHeight<200 && !thing6Showed){
+        $(function(){
+            $('.thing6').animate({opacity:'1'},0,()=>{
+                $('.thing6').css('transition-delay','.1s')
+                $('.thing6').css('transition-duration','1s')
+                $('.thing6').css('transform','translateY(-300px)')
+            })
+        })
+        thing1Showed=true
+    }
+})
+
 
 class Thing extends React.Component{
     constructor(props){
@@ -95,13 +107,15 @@ class Thing extends React.Component{
 
         return(
                 <div className={`thingContainer ${this.props.class2}`}>
-                    <div onMouseEnter={this.changeToWhite.bind(this)} onMouseLeave={this.changeToBlue.bind(this)} className='thing'>
-                        <div className='thingLogo'>
-                            <FontAwesomeIcon icon={this.props.iconName} size='4x' color={this.state.iconColor} />
+                    <a target='blank' href={this.props.link}>
+                        <div onMouseEnter={this.changeToWhite.bind(this)} onMouseLeave={this.changeToBlue.bind(this)} className='thing'>
+                            <div className='thingLogo'>
+                                <FontAwesomeIcon icon={this.props.iconName} size='4x' color={this.state.iconColor} />
+                            </div>
+                            <h1 className='thingTitle'>{this.props.title}</h1>
+                            <p className='thingAbout'>{this.props.about}</p>
                         </div>
-                        <h1 className='thingTitle'>{this.props.title}</h1>
-                        <p className='thingAbout'>{this.props.about}</p>
-                    </div>
+                    </a>
                 </div>
 
         )

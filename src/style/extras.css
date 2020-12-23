@@ -1,12 +1,12 @@
 .extrasContainer{
     background-color:#f9f9f9;
-    height: 1180px;
+    /* height: 1180px; */
     width: 100vw;
 }
 .extrasSemiContainer{
     position: relative;
     width:1250px;
-    height: 950px;
+    /* height: 950px; */
     left: -625px;
     margin-left: 50vw;
     overflow: hidden;
@@ -37,24 +37,24 @@
 }
 
 @media(max-width:1300px) and (min-width:750px){
-    .extrasContainer{
+    /* .extrasContainer{
         height: 1460px;
-    }
+    } */
     .extrasSemiContainer{
         width:750px;
-        height: 1260px;
+        /* height: 1260px; */
         left:-375px;
     }
 }
 
 @media(max-width:500px){
-    .extrasContainer{
+    /* .extrasContainer{
         height: 2300px;
-    }
+    } */
     .extrasSemiContainer{
         width:300px;
         left:-150px;
-        height: 2100px;
+        /* height: 2100px; */
     }
 }
 @media(min-width:350px) and (max-width:500px){
@@ -65,11 +65,11 @@
 }
 
 @media (max-width:750px) and (min-width:500px){
-    .extrasContainer{
+    /* .extrasContainer{
         height: 2650px;
-    }
+    } */
     .extrasSemiContainer{
-        height: 2450px;
+        /* height: 2450px; */
         width: 450px;
         left: -225px;
     }

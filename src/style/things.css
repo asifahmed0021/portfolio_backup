@@ -1,9 +1,11 @@
 .thingsContainer{
-    height: 1200px;
     width:100vw;
-    /* background-color: #f9f9f9; */
     text-align: center;
     background-color:#f9f9f9;
+    height: max-content;
+    overflow: hidden;
+    padding-bottom: 50px;
+
 }
 
 .thingsTitle{
@@ -11,33 +13,21 @@
     top:150px;
     padding:50px 0px;
     height: 150px;
-    /* background-color: violet; */
     opacity:0;
 }
 .thingsTitleh1{
     font-size: 37px;
     font-weight:500 !important;
 }
-/* h1{
-    margin-bottom:0px;
-    font-size: 40px;
-    font-weight: normal;
-} */
 
-@media(max-width:1200px){
-    .thingsContainer{
-        height: 1700px;
-    }
-}
+
+
 @media(max-width:700px){
     .thingsTitleh1{
         font-size: 35px;
     }
 }
 @media(max-width:500px){
-    .thingsContainer{
-        height: 2300px;
-    }
     .thingsTitleh1{
         font-size: 25px;
     }

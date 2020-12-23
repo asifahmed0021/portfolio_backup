@@ -125,7 +125,7 @@ class About extends React.Component{
                                     <div className='sub'>
                                     <h2 className='category4'>Fameworks and libraries i know:</h2>
                                     <p className='lang'>•Mainly i like to develop things using <br></br>React.js | Node.js | React-native | Jquery</p><br></br>
-                                    <p className='lang'>•I also have a basic understanding of Django and Android studio.</p>
+                                    <p className='lang'>•I also have a basic understanding of Django and Android studio and cuurrently i am learning java servlets and spring framework.</p>
                                     </div>
                                 </div>
                             </div>
