@@ -27,7 +27,7 @@ class Home extends React.Component{
         return(
             <div className="homeContainer">
                 <div className='topHead'>
-                    <h1 className='hello'>Hello, I am Asif.</h1>
+                    <h1 className='hello'> I am Asif.</h1>
                     <p className='me'>and this is the tiny part of the web that i call my own. I'm a full time software developer and love playing basketball. The things i do of interest is posted here so i can keep track of it all and maybe even inspire someone. :)</p>
 
                 </div>

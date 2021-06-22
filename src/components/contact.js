@@ -72,7 +72,7 @@ class Contact extends React.Component{
 
     
     gitEnter(){
-        this.setState({gcolor:'rgb(33,99,166)'})
+        this.setState({gcolor:'black'})
     }
     whatsappEnter(){
         this.setState({wcolor:'green'})

@@ -49,7 +49,7 @@ class About extends React.Component{
 
     
     gitEnter(){
-        this.setState({gcolor:'rgb(33,99,166)'})
+        this.setState({gcolor:'black'})
     }
     whatsappEnter(){
         this.setState({wcolor:'green'})
@@ -58,6 +58,7 @@ class About extends React.Component{
         this.setState({lcolor:'rgb(33,99,166)'})
     }
     instaEnter(){
+        // this.setState({icolor:'rgb(181,35,151)'})
         this.setState({icolor:'rgb(181,35,151)'})
     }
     leave(){
